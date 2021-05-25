@@ -1,0 +1,33 @@
+@import './variables';
+
+#navbar {
+    display: flex;
+    flex-direction: column;
+    background-color: $secondColor;
+    // height: 20vh;
+
+    ul {
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+        margin: 1rem 30rem;
+
+        li {
+            &:hover {
+                border-bottom: 1px solid $textColor;
+            }
+        }
+
+        a {
+            text-decoration: none;
+            color: $textColor;
+        }
+    }
+
+    #top-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 1rem 1rem;
+    }
+}
